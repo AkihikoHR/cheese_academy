@@ -1,0 +1,382 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+	width: 960px;
+	margin: 0 auto;
+}
+
+a{
+	color: inherit;
+}
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+
+/*headerここから
+---------------------*/
+
+.main_image{
+	background: url(../img/mainbg.png);
+	background-size: cover;
+	background-position: center;
+	height: 320px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.main_image h1{
+	font-size: 36px;
+}
+
+.main_image p{
+	font-size: 24px;
+}
+
+/*logo_menueここから
+---------------------*/
+
+.header_menue{
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0 auto;
+	border-bottom: 1px solid #efefef;
+	border-left: 1px solid #efefef;
+}
+
+.header_menue img{
+	padding: 20px;
+	margin: 0 0 0 30px;
+}
+
+.header_list{
+	display: flex;
+	margin: 0 20px 0 0;
+}
+
+.header_item{
+	font-size: 21px;
+	margin: 10px 20px;
+	padding: 10px 0 0 0;
+}
+
+
+/*aboutここから
+---------------------*/
+
+.about_box{
+	padding: 80px 0px 60px 0px;
+}
+
+.about_box div{
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.about_box div h2{
+	color: #ffd61a;
+	font-size: 24px;
+}
+
+.about_paragraph_0{
+	margin: 24px 0 64px 0;
+}
+
+.about_paragraph_1{
+	margin: 0 0 40px 0;
+}
+
+.about_paragraph_3{
+	margin: 40px 0 40px 0;
+}
+
+.center_banner img{
+	width: 100%;
+}
+
+/*courseここから
+---------------------*/
+
+.course_box{
+	padding: 64px 0 64px 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.course_box h2{
+	font-size: 24px;
+	margin: 0 0 20px 0;
+}
+
+.course_box p{
+	line-height: 2;
+}
+
+.course_box_1,
+.course_box_2,
+.course_box_3{
+	display: flex;
+}
+
+.course_box_1_img,
+.course_box_2_img,
+.course_box_3_img{
+	width: 50%;
+}
+
+.course_box_1_img img,
+.course_box_2_img img,
+.course_box_3_img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.course_box_1_text,
+.course_box_2_text,
+.course_box_3_text{
+	width: 50%;
+	background-color: rgb(242, 242, 242);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.course_box_1_text h3,
+.course_box_2_text h3,
+.course_box_3_text h3{
+	font-size: 18px;
+	color: #222222;
+	margin: 0px 0px 20px 0px;
+}
+
+.course_box_1_text div,
+.course_box_2_text div,
+.course_box_3_text div{
+	width: 80%;
+}
+
+/*newsここから
+---------------------*/
+
+.news{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.news_title{
+	text-align: center;
+	padding: 64px 0px 64px 0px;
+}
+
+.news_title h2{
+	color: #ffd61a;
+}
+
+.news_box{
+	display: flex;
+	padding: 0 40px;
+}
+
+.news_box_1,
+.news_box_2,
+.news_box_3{
+	margin: 0 16px;
+}
+
+.news_box_1 img,
+.news_box_2 img,
+.news_box_3 img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.news_date{
+	margin: 32px 0px 24px 0px;
+}
+
+.btn-news-more{
+	display: block;
+	color: white;
+	background-color:#ffd61a;
+	font-size: 21px;
+	width: 300px;
+	height: 60px;
+	text-align: center;
+	padding: 12px 0 0 0;
+	margin: 56px auto 48px auto;
+	border-radius: 4px;
+	transition: 0.2s;
+}
+
+.btn-news-more:hover{
+	background-color: orange;
+}
+
+/*accessここから
+---------------------*/
+
+.access_box{
+	background-color: rgb(242, 242, 242);
+	text-align: center;
+	margin: 0 auto;
+	padding: 64px 0;
+}
+
+.access_box h2{
+	margin: 0 0 24px 0;
+}
+
+.access_text{
+	background-color: rgb(242, 242, 242);
+}
+
+.access_text_box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 64px 0px 80px 0px;
+}
+
+.access_text_box_1, .access_text_box_2{
+	line-height: 2.5;
+}
+
+.access_text_box_2{
+	margin:0px 0px 0px 48px;
+}
+
+
+/*contactここから
+---------------------*/
+.contact{
+	padding: 80px 0 120px;
+}
+
+.contact_box{
+	text-align: center;
+	margin: 0 auto;
+}
+
+.contact_box h2{
+	margin: 0 0 24px 0;
+}
+
+.contact_box_p_1{
+	margin: 0 0 36px 0;
+}
+
+.contact_box_p_3{
+	margin: 32px 0 80px 0;
+}
+
+.form-wrapper{
+	width: 560px;
+	margin: 0 auto;
+}
+
+.form-inner{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 40px;
+}
+
+.form-title{
+	width: 132px;
+	margin: 0 40px 0 0;
+	padding: 4px 0 0 0;
+}
+
+.form-item{
+	width: 388px;
+	margin: 0 0 24px;
+	display: block;
+}
+
+.form-parts{
+	box-sizing: border-box;
+	width: 90%;
+	border: solid 1px #bfbfbf;
+	padding: 8px;
+}
+
+.btn-submit{
+	display: block;
+	color: white;
+	font-weight: bold;
+	background-color:#ffd61a;
+	font-size: 18px;
+	width: 298px;
+	height: 54px;
+	text-align: center;
+	margin: 40px auto 0;
+	border-radius: 4px;
+	transition: 0.2s;
+}
+
+.btn-submit:hover{
+	background-color: orange;
+}
+
+
+
+/*footerここから
+---------------------*/
+
+footer {
+	background-color: #707070;
+	padding: 16px 0;
+	font-size: 18px;
+	height: 60px;
+	text-align: center;
+}
+
+footer .wrapper{
+	position: relative;
+}
+
+.btn-pagetop{
+	position: absolute;
+	top: -76px;
+	right: 0;
+	display: block;
+	width: 60px;
+	height: 60px;
+	background-color: #707070;
+}
+
+.copyrights{
+	color: white;
+}
+
+.icon-up{
+	display: block;
+	color: white;
+	font-size: 32px;
+	padding: 10px 0;
+}
